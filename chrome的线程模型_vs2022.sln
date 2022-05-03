@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample", "38综合实践c++11实现chrome的线程模型\sample\sample.vcxproj", "{E0342AFB-8784-4B87-BFA2-E54D4FDE1764}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "38综合实践c++11实现chrome的线程模型\base\base.vcxproj", "{45393762-59DC-44A6-9C0B-788C07E6EEBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0342AFB-8784-4B87-BFA2-E54D4FDE1764}.Debug|x64.ActiveCfg = Debug|x64
+		{E0342AFB-8784-4B87-BFA2-E54D4FDE1764}.Debug|x64.Build.0 = Debug|x64
+		{E0342AFB-8784-4B87-BFA2-E54D4FDE1764}.Release|x64.ActiveCfg = Release|x64
+		{E0342AFB-8784-4B87-BFA2-E54D4FDE1764}.Release|x64.Build.0 = Release|x64
+		{45393762-59DC-44A6-9C0B-788C07E6EEBC}.Debug|x64.ActiveCfg = Debug|x64
+		{45393762-59DC-44A6-9C0B-788C07E6EEBC}.Debug|x64.Build.0 = Debug|x64
+		{45393762-59DC-44A6-9C0B-788C07E6EEBC}.Release|x64.ActiveCfg = Release|x64
+		{45393762-59DC-44A6-9C0B-788C07E6EEBC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96B37A8B-704B-4843-B523-8FD845ABC012}
+	EndGlobalSection
+EndGlobal
