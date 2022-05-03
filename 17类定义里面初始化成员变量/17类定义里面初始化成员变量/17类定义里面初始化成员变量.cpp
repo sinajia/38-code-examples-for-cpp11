@@ -10,7 +10,7 @@ public:
     A() : i_(1) {
         i_ = 2;
     }
-    int i_ = 0;
+    int i_ = 0; // 构造对象时，最早执行
 };
 
 int main()

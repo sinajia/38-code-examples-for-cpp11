@@ -7,7 +7,7 @@ class A {
 public:
     A() = default;
     A(int) {}
-    // A(const A&) = delete;
+    // A(const A&) = delete; // delete声明不产生拷贝构造函数
 };
 
 int main()

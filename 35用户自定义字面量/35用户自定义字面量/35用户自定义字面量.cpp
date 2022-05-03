@@ -36,7 +36,7 @@ public:
 
 };
 
-RGB operator"" rgb(const char * v, size_t n) {
+RGB operator""_rgb(const char * v, size_t n) {
     return RGB(v, n);
 }
 
@@ -45,7 +45,7 @@ int main()
     std::this_thread::sleep_for(100ms);
     // std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
-    RGB lrgb = "25,255,55"rgb;
+    RGB lrgb = "25,255,55"_rgb;
 
     lrgb.func();
 

@@ -71,7 +71,7 @@ int main()
 
     {
         string s1 = "abc...";
-        string s2 = std::move(s1);
+        string s2 = std::move(s1); // 移动构造，执行完成后，s1就不再使用了
     }
 
     {

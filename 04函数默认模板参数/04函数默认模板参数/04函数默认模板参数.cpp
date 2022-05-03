@@ -5,7 +5,7 @@
 
 using namespace std;
 
-template<typename T, typename S = int>
+template<typename T, typename S = int> // 类的默认模板参数本来就支持，C++11增加了函数的
 S func(T t) {
     cout << t << endl;
     return sizeof(S);

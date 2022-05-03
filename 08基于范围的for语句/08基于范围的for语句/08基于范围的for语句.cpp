@@ -6,6 +6,8 @@
 #include <list>
 using namespace std;
 
+// 脚本语言都可以这么用，C++在不断进化
+
 int main()
 {
     int arr[] = { 0,1,2,3,4,5,6,7,8,9 };

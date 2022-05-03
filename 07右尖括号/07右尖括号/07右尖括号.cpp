@@ -13,7 +13,7 @@ struct item {
 
 int main()
 {
-    // vs2008编译不过，必须多一个空格
+    // vs2008编译不过，必须多敲一个空格，小优化，本该如此
     vector<item<int>> v;
     std::cout << "Hello World!\n";
 }

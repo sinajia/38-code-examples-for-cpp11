@@ -21,7 +21,7 @@ struct MyStruct2
 };
 _Pragma("pack(pop)")
 
-#define PRAGPUSH(x) PRAGMA(pack(push, x))
+#define PRAGPUSH(x) PRAGMA(pack(push, x)) // _Pragma 的好处是支持宏语法
 #define PRAGMA(x) _Pragma(#x)
 #define PRAGPOP _Pragma("pack(pop)")
 

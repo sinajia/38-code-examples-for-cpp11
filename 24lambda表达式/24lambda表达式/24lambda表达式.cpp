@@ -34,7 +34,7 @@ public:
 auto func() {
     A a;
     auto f = (
-        [=]() {
+        [=]() { // = 表示复制一份a，调用的是拷贝构造函数
             cout << "a.i_=" << a.i_ << endl;
         }
     );
@@ -47,22 +47,25 @@ int main()
     {
         A a;
         auto f = (
-            [=]() {
+            [&]() { // 以引用的方式使用a
                 cout << "a.i_=" << a.i_ << endl;
             }
         );
         f();
+        
+        cout << endl;
     }
 
     {
         std::function<void(void)> f = func();
         f();
+        cout << endl;
     }
 
     {
         A a;
-        auto lam = [=](int i) mutable -> int {
-            a.i_ = 101;
+        auto lam = [=](int i) mutable -> int {  // 使用mutable表示可以改变变量a的值
+            a.i_ = 101; // 修改a的值
             cout << "a.i_=" << a.i_ << endl;
             cout << "i=" << i << endl;
             return 103;

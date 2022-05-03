@@ -7,7 +7,7 @@ using namespace std;
 
 class A {
 public:
-    enum Type {
+    enum  {
         WX,
         QQ
     };
@@ -15,7 +15,7 @@ public:
 
 class B {
 public:
-    enum class Type : long 
+    enum class Type : int 
     {
         WX,
         QQ
@@ -32,5 +32,6 @@ int main()
 
     long i = A::WX;
 
+    // i = B::Type::WX; // 报错
     i = (int)B::Type::WX;
 }

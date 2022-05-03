@@ -5,7 +5,7 @@
 
 class A {
 public:
-    // 在构造函数里面调用另外一个构造函数
+    // 在构造函数里面调用另外一个构造函数，这是提高编码效率，减少冗余的设计
     A() : A(0, 0, 0) {};
     A(int hour, int min, int sec) : hour_(hour), min_(min), sec_(sec) {}
 

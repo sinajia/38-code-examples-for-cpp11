@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e0342afb-8784-4b87-bfa2-e54d4fde1764}</ProjectGuid>
-    <RootNamespace>sample</RootNamespace>
+    <ProjectGuid>{ee7a5118-0116-40ff-bbd5-e40c960db012}</ProjectGuid>
+    <RootNamespace>My36列表初始化类型收窄</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>38综合实践c++11实现chrome的线程模型</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,12 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="sample.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\base\base.vcxproj">
-      <Project>{45393762-59dc-44a6-9c0b-788c07e6eebc}</Project>
-    </ProjectReference>
+    <ClCompile Include="36列表初始化 类型收窄.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

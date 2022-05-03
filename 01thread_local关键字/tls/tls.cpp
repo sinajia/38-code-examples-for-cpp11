@@ -12,7 +12,7 @@ using namespace std;
 DWORD slot_ = TlsAlloc();
 
 //int i = 0;
-thread_local int i = 0;
+thread_local int i = 0; // 可以理解为对不同操作系统相关一组TLS API的封装，以提供统一使用界面
 
 class A {
 public:

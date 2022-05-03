@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/*
+override，final 用于接口，虚函数
+final 也可用于声明类
+*/
+
 class Base {
 public:
     virtual void func() = 0;
@@ -22,13 +27,17 @@ public:
     }
 };
 
-class A : public Derived {
+class A final : public Derived {
 public:
     // 表示重载的最终版本
     virtual void func() final {
         cout << "A::func" << endl;
     }
 };
+
+//class A2 : public A {
+//
+//};
 
 int main()
 {

@@ -38,7 +38,8 @@ int main()
     }
 
     {
-        int a = 100;
+        random_device rd;
+        default_random_engine e { rd() };
         // 尽可能编译过不报错，退化为
         /*
            template<class T>
@@ -46,8 +47,7 @@ int main()
                 return t;
            }
         */
-        __int64 b = (__int64)&a;
-        cout << clone(b);
+        cout << clone(e());
     }
 
 }

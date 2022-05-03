@@ -5,6 +5,7 @@
 #include <memory>
 #include <thread>
 #include <chrono>
+#include <conio.h>
 #include "../base/thread.h"
 #include "../base/time.h"
 
@@ -46,12 +47,13 @@ int main()
         }
     }
 
-    std::this_thread::sleep_for(2s);
+    while ((!_kbhit() || _getch() != 27)) {
+        std::cout << static_cast<unsigned int>(base::TimeTicks::Now().ToInternalValue() / 1000) << std::endl;
+        std::this_thread::sleep_for(2s);
+    }
 
     thread.Stop();
 
-    std::cout << "closed" << std::endl;
-
-    cout << "end" << endl;
+    return 0;
 
 }

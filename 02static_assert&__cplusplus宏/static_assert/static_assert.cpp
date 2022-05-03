@@ -7,7 +7,7 @@ template<typename T>
 class A {
 public:
     A() {
-        static_assert(sizeof(T) == 4, "sizeof(T) != 4");
+        static_assert(sizeof(T) == 4, "sizeof(T) != 4"); // 编译期决议，编译器检查
     }
 };
 

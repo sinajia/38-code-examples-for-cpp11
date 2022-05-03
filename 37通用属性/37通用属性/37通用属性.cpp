@@ -21,6 +21,13 @@ void func() {
 	cout << "不会执行到这里";
 }
 
+// 返回值不应该被丢弃
+[[nodiscard]] int func2() {
+	return 0;
+}
+
 int main() {
+	func2(); // 编译器会发出相关warning
 	abort();
 }
+

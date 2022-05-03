@@ -12,5 +12,5 @@ public:
 
 int main()
 {
-    cout << sizeof(A::i_) << endl;
+    cout << sizeof(A::i_) << endl; // C++11开始支持
 }

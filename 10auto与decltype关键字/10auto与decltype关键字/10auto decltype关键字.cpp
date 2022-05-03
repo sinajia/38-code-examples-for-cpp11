@@ -18,9 +18,8 @@ int main()
 {
     // auto代替类型
     auto i = func(5);
-    // 推导类型
-    decltype(func(1)) i1;
-    decltype(i) i2;
+    // 推到类型
+    decltype(i) i1;
     i1 = 100;
     cout << i1 << endl;
 }

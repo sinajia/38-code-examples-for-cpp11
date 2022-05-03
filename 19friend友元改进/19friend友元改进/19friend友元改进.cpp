@@ -10,7 +10,7 @@ class B;
 template<typename T>
 class A {
 private:
-    friend T; // 可以是类，也可以是基本类型，基本类型则忽略friend，用于泛型编程
+    friend T; // 可以是类，也可以是基本类型，基本类型编译器自动忽略friend，用于泛型编程
     void func() {
         cout << typeid(T).name() << endl;
     }

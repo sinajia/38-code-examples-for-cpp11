@@ -16,10 +16,10 @@ void print(string&& s) {
 
 template<typename Ty>
 void func(Ty&& s) {
-    std::cout << "is_lvalue_reference:" << std::is_lvalue_reference<decltype(s)>::value << endl;
+    std::cout << "is_lvalue_reference:" << std::is_lvalue_reference<decltype(s)>::value << endl; // C++11新增语法，用来进行左右值判断
     std::cout << "is_rvalue_reference:" << std::is_rvalue_reference<decltype(s)>::value << endl;
     //print(s);
-    print(std::forward<Ty>(s));
+    print(std::forward<Ty>(s)); // 完美转发。如果是左值，按照左值传递；如果是右值，按照右值传递。新增了一个规则：引用折叠
 }
 
 int main()
